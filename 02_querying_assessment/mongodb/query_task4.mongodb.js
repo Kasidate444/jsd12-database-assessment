@@ -18,4 +18,23 @@
 // Write in English or Thai. Do not skip this step.
 //
 // Your thinking:
-//
+// total revenue from orders
+
+
+use("chrome-burger-db");
+db.orders.aggregate([
+    {
+        $group: {
+          _id: {},
+          total_revenue: {
+            $sum: "$total_price"
+          }
+        }
+    },
+    {
+        $project: {
+          _id:0,
+          total_revenue:1
+        }
+    }
+]);

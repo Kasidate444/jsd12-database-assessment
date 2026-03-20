@@ -18,3 +18,11 @@
 //
 // Your thinking:
 //
+
+
+use("chrome-burger-db");
+db.ingredients.find(
+    {stock_level: {$gte : 100.00}},
+    {_id:0,supplier_id:0},
+    {sort:{stock_level:1}}
+);

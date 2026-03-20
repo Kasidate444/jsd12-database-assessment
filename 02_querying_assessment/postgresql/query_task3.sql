@@ -20,3 +20,16 @@
 --
 -- Your thinking:
 --
+
+-- SELECT * FROM orderitems
+
+-- SELECT * FROM Orders WHERE staff_id = 1;
+
+-- SELECT name, price FROM MenuItems ORDER BY price asc LIMIT 15;
+
+
+SELECT s.FIRST_name, s.last_name, s.role, COUNT(o.order_id) AS order_count
+FROM Staff s
+LEFT JOIN orders o ON s.staff_id = o.staff_id
+GROUP BY s.staff_id
+ORDER BY order_count DESC;

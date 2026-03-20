@@ -18,3 +18,5 @@
 --
 -- Your thinking:
 --
+
+SELECT * FROM Staff WHERE role = 'Cook'

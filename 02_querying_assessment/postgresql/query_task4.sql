@@ -18,3 +18,8 @@
 --
 -- Your thinking:
 --
+
+SELECT Ingredients.NAME
+FROM Ingredients
+JOIN Suppliers ON Ingredients.supplier_id = Suppliers.supplier_id
+WHERE Suppliers.NAME = 'Freshest Farm Produce';

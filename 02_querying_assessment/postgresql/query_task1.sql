@@ -18,3 +18,6 @@
 --
 -- Your thinking:
 --
+
+
+SELECT * FROM menuitems WHERE category = 'Side'

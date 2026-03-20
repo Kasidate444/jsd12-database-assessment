@@ -19,3 +19,6 @@
 //
 // Your thinking:
 //
+
+use("chrome-burger-db");
+db.orders.find({"staff.first_name":"Jane"},{_id: 0, order_date:1, total_price:1})

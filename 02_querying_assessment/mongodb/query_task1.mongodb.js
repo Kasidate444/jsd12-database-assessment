@@ -18,3 +18,16 @@
 //
 // Your thinking:
 //
+use("chrome-burger-db");
+
+//db.menu_items.find()
+
+//db.suppliers.find()
+
+db.menu_items.find({price: { $lte: 10 } })
+
+//db.staff.findOne({"last_name": "Smith"})
+
+//ex 2
+
+//db.orders.findOne({"name": "Classic Burger"})
